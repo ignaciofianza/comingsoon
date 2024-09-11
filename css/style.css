@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-center{
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+h1, #countdown, .social-icons, .btn-custom {
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons a{
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover  {
+    transform: scale(1.05);
+}
+
+#countdown {
+    margin: 0px 0 20px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+}
